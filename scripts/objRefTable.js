@@ -26,6 +26,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Platform.Acts.SimulateControl,
 		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.Keyboard.Cnds.IsKeyDown,
+		C3.Plugins.Touch.Cnds.IsTouchingObject,
 		C3.Plugins.Touch.Cnds.CompareOrientation,
 		C3.Plugins.Sprite.Cnds.IsOnScreen,
 		C3.Plugins.System.Exps.viewportbottom,
@@ -72,6 +73,8 @@ self.C3_JsPropNameTable = [
 	{Sprite13: 0},
 	{Sprite14: 0},
 	{Áudio: 0},
+	{esquerda: 0},
+	{direita: 0},
 	{MinScroll: 0},
 	{NextPlatform: 0},
 	{score: 0}
@@ -102,5 +105,7 @@ self.InstanceType = {
 	Sprite12: class extends self.ISpriteInstance {},
 	Sprite13: class extends self.ISpriteInstance {},
 	Sprite14: class extends self.ISpriteInstance {},
-	Áudio: class extends self.IInstance {}
+	Áudio: class extends self.IInstance {},
+	esquerda: class extends self.ISpriteInstance {},
+	direita: class extends self.ISpriteInstance {}
 }
